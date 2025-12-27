@@ -1,5 +1,0 @@
-outs:
-- md5: ddcb20c4fb8b706752b34c8cd05c5893
-  size: 271
-  hash: md5
-  path: train_stats.json
