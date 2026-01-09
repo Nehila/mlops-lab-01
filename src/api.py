@@ -32,6 +32,8 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
+from uuid import uuid4
+
 
 # ---------------------------------------------------------------------------
 # Constantes de chemin
@@ -52,6 +54,8 @@ LOG_PATH: Path = ROOT / "logs" / "predictions.log"
 
 app = FastAPI(title="MLOps Lab 01 - Churn API")
 
+if not payload.request_id:
+    payload.request_id = f"auto-{uuid4()}"
 
 # ---------------------------------------------------------------------------
 # Schéma d'entrée (Pydantic)
@@ -196,6 +200,8 @@ def log_prediction(payload: dict[str, Any]) -> None:
 
     with LOG_PATH.open("a", encoding="utf-8") as log_file:
         log_file.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+
 
 
 
