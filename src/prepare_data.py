@@ -39,6 +39,8 @@ TRAIN_STATS_PATH: Final[Path] = ROOT / "registry" / "train_stats.json"
 # ---------------------------------------------------------------------------
 
 
+print("Prepare data pipeline / version 2")
+print("Prepare data pipeline / version 2")
 
 
 def data_quality_checks(df: pd.DataFrame) -> None:
