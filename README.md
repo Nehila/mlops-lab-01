@@ -14,4 +14,8 @@ Ce dépôt regroupe l’ensemble des **labs MLOps** réalisés dans le cadre du 
 
 ### Lab 5 : Déploiement conteneurisé d’un modèle ML
 
+### Lab 6 : Déploiement K8s d’un système MLOps Churn
+
+### Lab 7 : Gestion du cycle de vie des modèles avec MLflow
+
 Chaque dossier `labX` contient les captures d’écran nécessaires pour justifier l’exécution et la validation du lab correspondant. 
