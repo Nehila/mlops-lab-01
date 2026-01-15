@@ -3,3 +3,17 @@ __pycache__/
 *.pyc
 logs/
 models/
+
+# macOS
+.DS_Store
+
+# Docker images
+*.tar
+
+# MLflow local tracking
+mlflow/
+
+# Registry runtime files
+registry/current_model.txt
+registry/metadata.json
+registrycurrent_model.txt
